@@ -1,4 +1,6 @@
 ﻿using System;
+using UnityEngine;
+using UnityEngine.AI;
 
 public class PoliceCar : Vehicle
 {
@@ -6,6 +8,8 @@ public class PoliceCar : Vehicle
     private bool isPatrolling;
     private bool isPersecuting;
     private SpeedRadar? speedRadar;
+    private NavMeshAgent navMeshAgent;
+    private Transform playerTransform;
 
     public void AssignRadar(SpeedRadar radar)
     {
@@ -112,5 +116,12 @@ public class PoliceCar : Vehicle
         SetPlate("CNP 001"); 
         SetSpeed(50.0f);
         base.Start();
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        playerTransform = FindAnyObjectByType<Taxi>().transform;
+    }
+
+    private void Update()
+    {
+        navMeshAgent.destination = playerTransform.position;
     }
 }

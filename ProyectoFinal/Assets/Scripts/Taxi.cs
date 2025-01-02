@@ -1,11 +1,12 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Taxi : Vehicle
 {
     [SerializeField] private float rotationSpeed = 200f;
     [SerializeField] private bool isCarryingPassengers;
-    [SerializeField] private int health = 100;  // Vida inicial del taxi
+    [SerializeField] private int health = 1000;  // Vida inicial del taxi
 
     private void Awake()
     {
@@ -86,7 +87,7 @@ public class Taxi : Vehicle
 
     private void EndGame()
     {
-        Console.WriteLine(WriteMessage("Game Over!"));
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
     }
 }
