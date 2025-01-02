@@ -1,17 +1,22 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Taxi : Vehicle
 {
     [SerializeField] private float rotationSpeed = 200f;
     [SerializeField] private bool isCarryingPassengers;
-    [SerializeField] private int health = 1000;  // Vida inicial del taxi
+    [SerializeField] private float health = 100;  // Vida inicial del taxi
+    [SerializeField] private Slider visualHealth;
 
     private void Awake()
     {
         base.Start();
-        SetSpeed(20f);  // Configuración de la velocidad predeterminada específica para Taxi
+        SetSpeed(12.5f);
+        visualHealth.maxValue = 100;
+        visualHealth.value = health;
+
     }
 
     public void StartRide()
@@ -19,7 +24,7 @@ public class Taxi : Vehicle
         if (!isCarryingPassengers)
         {
             isCarryingPassengers = true;
-            SetSpeed(100.0f);  // Aumentar la velocidad cuando lleva pasajeros
+            SetSpeed(25.0f);  // Aumentar la velocidad cuando lleva pasajeros
             Console.WriteLine(WriteMessage("starts a ride."));
         }
         else
@@ -33,7 +38,7 @@ public class Taxi : Vehicle
         if (isCarryingPassengers)
         {
             isCarryingPassengers = false;
-            SetSpeed(45.0f);  // Reducir la velocidad cuando no lleva pasajeros
+            SetSpeed(12.5f);  // Reducir la velocidad cuando no lleva pasajeros
             Console.WriteLine(WriteMessage("finishes ride."));
         }
         else
@@ -56,7 +61,7 @@ public class Taxi : Vehicle
             // Aplicar movimiento al Rigidbody
             rb.MovePosition(rb.position + movement * Time.deltaTime);
 
-            if (Math.Abs(moveVertical) > 0.01f)  
+            if (Math.Abs(moveVertical) > 0.01f)
             {
                 rb.MoveRotation(rb.rotation * rotation);
             }
@@ -67,8 +72,8 @@ public class Taxi : Vehicle
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            health -= 10;  
-            Console.WriteLine(WriteMessage($"Health decreased: {health} remaining."));
+            health -= 10;
+            visualHealth.value = health;
             CheckGameOver();
         }
         else if (collision.gameObject.CompareTag("Enemy"))

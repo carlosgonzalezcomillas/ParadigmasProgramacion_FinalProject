@@ -366,6 +366,7 @@
 "Assets/Scripts/PoliceStation.cs"
 "Assets/Scripts/prueba.cs"
 "Assets/Scripts/SpeedRadar.cs"
+"Assets/Scripts/TagAssigner.cs"
 "Assets/Scripts/Taxi.cs"
 "Assets/Scripts/Vehicle.cs"
 "Assets/SimplePeople/CityPeopleLite/Demo_Scenes/Scripts/CityPeople.cs"
