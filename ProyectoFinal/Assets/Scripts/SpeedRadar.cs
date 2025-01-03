@@ -2,53 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpeedRadar : MonoBehaviour, IMessageWritter
+public class SpeedRadar : MonoBehaviour
 {
-    //Radar doesn't know about Vechicles, just speed and plates
-    public string plate = "";
-    public float lastSpeed = 0f;
-    public float legalSpeed = 50.0f;
-    public List<float> SpeedHistory { get; private set; }
+    public float legalSpeed = 20.0f;
+    public PoliceCar policeCar;  
+    private List<float> speedHistory = new List<float>();
+    private IMessageWritter messageWritter = new MessageLogger();
 
-    public void TriggerRadar(Vehicle vehicle)
+    private void OnTriggerEnter(Collider other)
     {
-        plate = vehicle.GetPlate();
-        lastSpeed = vehicle.GetSpeed();
-        SpeedHistory.Add(lastSpeed);
-    }
-        
-    public string GetLastReading()
-    {
-        if (lastSpeed > legalSpeed)
+        Vehicle vehicle = other.GetComponent<Vehicle>();
+        if (vehicle != null && vehicle.GetTypeOfVehicle() == "Taxi")
         {
-            return WriteMessage("Catched above legal speed.");
+            Taxi taxi = vehicle as Taxi;
+            if (taxi != null)
+            {
+                float speed = taxi.GetSpeed();
+                speedHistory.Add(speed);
+
+                messageWritter.WriteMessage($"Vehicle {taxi.Plate} detected at {taxi.GetSpeed()} km/h. Speed history recorded.");
+
+                if (speed > legalSpeed)
+                {
+                    messageWritter.WriteMessage($"Speeding detected: Vehicle {taxi.Plate} is over the legal limit of {legalSpeed} km/h.");
+                    if (policeCar != null)
+                    {
+                        policeCar.StartPersecution(taxi.transform);
+                    }
+                }
+            }
         }
         else
         {
-            return WriteMessage("Driving legally.");
+            Debug.Log("Not found");
         }
     }
 
-    public string PersecuteTaxi()
+    public void ShowSpeedHistory()
     {
-        if (lastSpeed > legalSpeed)
+        foreach (float recordedSpeed in speedHistory)
         {
-            return plate;
+            messageWritter.WriteMessage($"Recorded Speed: {recordedSpeed} km/h");
         }
-
-        else
-        {
-            return "";
-        }
-    }
-
-    public float GetLastSpeed()
-    {
-        return lastSpeed;
-    }
-
-    public virtual string WriteMessage(string radarReading)
-    {
-        return $"Vehicle with plate {plate} at {lastSpeed.ToString()} km/h. {radarReading}";
     }
 }

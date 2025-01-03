@@ -7,7 +7,7 @@ public class Taxi : Vehicle
 {
     [SerializeField] private float rotationSpeed = 200f;
     [SerializeField] private bool isCarryingPassengers;
-    [SerializeField] private float health = 100;  // Vida inicial del taxi
+    [SerializeField] private float health = 100;  
     [SerializeField] private Slider visualHealth;
 
     private void Awake()
@@ -24,7 +24,7 @@ public class Taxi : Vehicle
         if (!isCarryingPassengers)
         {
             isCarryingPassengers = true;
-            SetSpeed(25.0f);  // Aumentar la velocidad cuando lleva pasajeros
+            SetSpeed(25.0f);  
             Console.WriteLine(WriteMessage("starts a ride."));
         }
         else
@@ -38,7 +38,7 @@ public class Taxi : Vehicle
         if (isCarryingPassengers)
         {
             isCarryingPassengers = false;
-            SetSpeed(12.5f);  // Reducir la velocidad cuando no lleva pasajeros
+            SetSpeed(12.5f);  
             Console.WriteLine(WriteMessage("finishes ride."));
         }
         else
@@ -67,7 +67,7 @@ public class Taxi : Vehicle
             }
         }
     }   
-
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Obstacle"))

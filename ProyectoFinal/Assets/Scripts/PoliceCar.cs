@@ -4,124 +4,89 @@ using UnityEngine.AI;
 
 public class PoliceCar : Vehicle
 {
-    //constant string as TypeOfVehicle wont change allong PoliceCar instances 
-    private bool isPatrolling;
-    private bool isPersecuting;
-    private SpeedRadar? speedRadar;
+    [SerializeField] private int numberOfPatrolPoints = 5;
+    [SerializeField] private float minX, maxX, minZ, maxZ;
+    private Vector3[] patrolPoints;
+    private int currentPatrolIndex = 0;
     private NavMeshAgent navMeshAgent;
-    private Transform playerTransform;
-
-    public void AssignRadar(SpeedRadar radar)
-    {
-        speedRadar = radar;
-        Console.WriteLine(WriteMessage("Radar assigned."));
-    }
-
-    public void UseRadar(Vehicle vehicle)
-    {
-        if (isPatrolling)
-        {
-            if (speedRadar != null)
-            {
-                speedRadar.TriggerRadar(vehicle);
-                string meassurement = speedRadar.GetLastReading();
-                Console.WriteLine(WriteMessage($"Triggered radar. Result: {meassurement}"));
-                float speed = speedRadar.GetLastSpeed();
-
-                string taxiPlate = speedRadar.PersecuteTaxi();
-                if (taxiPlate != "")
-                {
-                    StartPersecution(taxiPlate);
-                }
-            }
-            else 
-            {
-                Console.WriteLine(WriteMessage("has no radar assigned."));
-            }
-        }
-        else
-        {
-            Console.WriteLine(WriteMessage("has no active radar, is not patrolling."));
-        }
-    }
-
-    public bool IsPatrolling()
-    {
-        return isPatrolling;
-    }
-
-    public bool IsPersecuting()
-    {
-        return isPersecuting;
-    }
-
-    public void StartPatrolling()
-    {
-        if (!isPatrolling)
-        {
-            isPatrolling = true;
-            Console.WriteLine(WriteMessage("started patrolling."));
-        }
-        else
-        {
-            Console.WriteLine(WriteMessage("is already patrolling."));
-        }
-    }
-
-    public void EndPatrolling()
-    {
-        if (isPatrolling)
-        {
-            isPatrolling = false;
-            Console.WriteLine(WriteMessage("stopped patrolling."));
-        }
-        else
-        {
-            Console.WriteLine(WriteMessage("was not patrolling."));
-        }
-    }
-
-    public void StartPersecution(string crimePlate)
-    {
-        if (!isPersecuting)
-        {
-            isPersecuting = true;
-            Console.WriteLine(WriteMessage($"is persecuting taxi {crimePlate}"));
-        }
-        else if (isPersecuting)
-        {
-            Console.WriteLine(WriteMessage($"was already in a persecution"));
-        }
-    }
-
-    public void PrintRadarHistory()
-    {
-        if (speedRadar != null)
-        {
-            Console.WriteLine(WriteMessage("Report radar speed history:"));
-            foreach (float speed in speedRadar.SpeedHistory)
-            {
-                Console.WriteLine(speed);
-            }
-        }
-        else
-        {
-            Console.WriteLine(WriteMessage("has no radar to report from."));
-        }
-    }
+    private bool isPersecuting;
+    private Transform target;
 
     protected override void Start()
     {
         SetTypeOfVehicle("Police Car");
-        SetPlate("CNP 001"); 
-        SetSpeed(50.0f);
+        SetPlate("CNP 001");
+        SetSpeed(30.0f);
         base.Start();
+        isPersecuting = false;
         navMeshAgent = GetComponent<NavMeshAgent>();
-        playerTransform = FindAnyObjectByType<Taxi>().transform;
+        GeneratePatrolPoints();
     }
 
     private void Update()
     {
-        navMeshAgent.destination = playerTransform.position;
+        if (!isPersecuting)
+        {
+            Patrol();
+        }
+        else
+        {
+            ChaseTarget();
+        }
+    }
+
+    private void GeneratePatrolPoints()
+    {
+        patrolPoints = new Vector3[numberOfPatrolPoints];
+        for (int i = 0; i < numberOfPatrolPoints; i++)
+        {
+            patrolPoints[i] = new Vector3(
+                UnityEngine.Random.Range(minX, maxX),
+                0, // Asumiendo que la y es siempre 0, ajusta si es necesario
+                UnityEngine.Random.Range(minZ, maxZ)
+            );
+        }
+    }
+
+    private void Patrol()
+    {
+        if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance < 0.5f)
+        {
+            SetRandomPatrolDestination();
+        }
+    }
+    private void SetRandomPatrolDestination()
+    {
+        if (patrolPoints.Length == 0) return;
+
+        navMeshAgent.destination = patrolPoints[currentPatrolIndex];
+        currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length; // Loop through patrol points
+    }
+
+    public void ChaseTarget()
+    {
+        if (target != null)
+        {
+            navMeshAgent.destination = target.position;
+        }
+    }
+
+    public void StartPersecution(Transform crimeTarget)
+    {
+        target = crimeTarget;
+        isPersecuting = true;
+        navMeshAgent.speed = 40.0f; 
+    }
+
+    public void StopPersecution()
+    {
+        isPersecuting = false;
+        navMeshAgent.speed = 50.0f; 
+        SetRandomPatrolDestination(); 
+    }
+
+    public void OnSpeedingDetected(Transform speeder)
+    {
+        StartPersecution(speeder);
     }
 }
