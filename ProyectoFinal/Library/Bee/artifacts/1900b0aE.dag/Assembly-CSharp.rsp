@@ -361,6 +361,7 @@
 "Assets/Scripts/GameOver.cs"
 "Assets/Scripts/IMessageWritter.cs"
 "Assets/Scripts/Menu.cs"
+"Assets/Scripts/PickUpPassengers.cs"
 "Assets/Scripts/PoliceCar.cs"
 "Assets/Scripts/RoadLayerAssigner.cs"
 "Assets/Scripts/SpeedRadar.cs"

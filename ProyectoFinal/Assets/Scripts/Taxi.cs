@@ -25,11 +25,11 @@ public class Taxi : Vehicle
         {
             isCarryingPassengers = true;
             SetSpeed(25.0f);  
-            Console.WriteLine(WriteMessage("starts a ride."));
+            Debug.Log("starts a ride.");
         }
         else
         {
-            Console.WriteLine(WriteMessage("is already in a ride."));
+            Debug.Log("is already in a ride.");
         }
     }
 
@@ -39,11 +39,11 @@ public class Taxi : Vehicle
         {
             isCarryingPassengers = false;
             SetSpeed(12.5f);  
-            Console.WriteLine(WriteMessage("finishes ride."));
+            Debug.Log("finishes ride.");
         }
         else
         {
-            Console.WriteLine(WriteMessage("is not on a ride."));
+            Debug.Log("is not on a ride.");
         }
     }
 

@@ -8,7 +8,7 @@ public abstract class Vehicle : MonoBehaviour
     [SerializeField] private string plate;
     [SerializeField] private float speed;
     [SerializeField] protected Rigidbody rb;
-    [SerializeField] protected float groundCheckDistance = 2.0f; 
+    [SerializeField] protected float groundCheckDistance = 3.0f; 
     [SerializeField] protected LayerMask groundLayer; 
 
     public string TypeOfVehicle => typeOfVehicle;

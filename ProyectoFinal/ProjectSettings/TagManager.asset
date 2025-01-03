@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Taxi
   - RoadSegment
+  - Person
   layers:
   - Default
   - TransparentFX

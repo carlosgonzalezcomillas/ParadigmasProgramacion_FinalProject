@@ -32,10 +32,6 @@ public class SpeedRadar : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            Debug.Log("Not found");
-        }
     }
 
     public void ShowSpeedHistory()
