@@ -13,7 +13,7 @@ public class Taxi : Vehicle
     private void Awake()
     {
         base.Start();
-        SetSpeed(12.5f);
+        SetSpeed(15.0f);
         visualHealth.maxValue = 100;
         visualHealth.value = health;
 
@@ -38,7 +38,7 @@ public class Taxi : Vehicle
         if (isCarryingPassengers)
         {
             isCarryingPassengers = false;
-            SetSpeed(12.5f);  
+            SetSpeed(15.0f);  
             Debug.Log("finishes ride.");
         }
         else

@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|c:\\users\\carlo\\onedrive - universidad pontificia comillas\\3.imat\\paradigmasprogramacion\\paradigmasprogramacion_finalproject\\proyectofinal\\assets\\scripts\\howtoplaymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\howtoplaymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|c:\\users\\carlo\\onedrive - universidad pontificia comillas\\3.imat\\paradigmasprogramacion\\paradigmasprogramacion_finalproject\\proyectofinal\\assets\\scripts\\menupause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menupause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\assets\\scripts\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,15 +27,11 @@
       "RelativeMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tagassigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\assets\\scripts\\policecar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\policecar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|c:\\users\\carlo\\onedrive - universidad pontificia comillas\\3.imat\\paradigmasprogramacion\\paradigmasprogramacion_finalproject\\proyectofinal\\assets\\scripts\\speedradar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\assets\\scripts\\speedradar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\speedradar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,7 +39,7 @@
       "RelativeMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\imessagewritter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|c:\\users\\carlo\\onedrive - universidad pontificia comillas\\3.imat\\paradigmasprogramacion\\paradigmasprogramacion_finalproject\\proyectofinal\\assets\\scripts\\pickuppassengers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\assets\\scripts\\pickuppassengers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C531D86-F514-8865-5267-1058EFED5D33}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pickuppassengers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,11 +50,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "HowToPlayMenu.cs",
+              "DocumentMoniker": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\HowToPlayMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HowToPlayMenu.cs",
+              "ToolTip": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\HowToPlayMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HowToPlayMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T18:05:14.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuPause.cs",
+              "DocumentMoniker": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\MenuPause.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuPause.cs",
+              "ToolTip": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\MenuPause.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MenuPause.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T17:15:34.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PickUpPassengers.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\PickUpPassengers.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PickUpPassengers.cs",
@@ -54,12 +88,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PickUpPassengers.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAowDwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:40:24.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-03T15:40:24.689Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "TagAssigner.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\TagAssigner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TagAssigner.cs",
@@ -67,12 +100,11 @@
               "RelativeToolTip": "Assets\\Scripts\\TagAssigner.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T17:40:59.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-02T17:40:59.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\Menu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Menu.cs",
@@ -80,12 +112,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Menu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T12:37:02.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T12:37:02.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "PoliceCar.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\PoliceCar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PoliceCar.cs",
@@ -93,25 +124,23 @@
               "RelativeToolTip": "Assets\\Scripts\\PoliceCar.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAcwBMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T16:18:35.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T16:18:35.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Taxi.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\Taxi.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Taxi.cs",
               "ToolTip": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\Taxi.cs",
               "RelativeToolTip": "Assets\\Scripts\\Taxi.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAcwC0AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwCgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T16:17:36.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T16:17:36.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IMessageWritter.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\IMessageWritter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\IMessageWritter.cs",
@@ -119,12 +148,11 @@
               "RelativeToolTip": "Assets\\Scripts\\IMessageWritter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T16:16:25.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T16:16:25.425Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Vehicle.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\Vehicle.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Vehicle.cs",
@@ -132,12 +160,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Vehicle.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T15:57:58.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T15:57:58.135Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "SpeedRadar.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\OneDrive - Universidad Pontificia Comillas\\3.IMAT\\ParadigmasProgramacion\\ParadigmasProgramacion_FinalProject\\ProyectoFinal\\Assets\\Scripts\\SpeedRadar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpeedRadar.cs",
@@ -145,8 +172,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SpeedRadar.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwCEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T15:45:29.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T15:45:29.929Z"
             }
           ]
         }
